@@ -1,8 +1,14 @@
+import { FileComponent } from "./components/FileComponent"
+import { FolderComponent } from "./components/FolderComponent"
+
+
+
 const App = () => {
   return (
-    <div>
-      index.html
-    </div>
+    <>
+      <FileComponent filename="index.html"/>
+      <FolderComponent foldername="node_modules"/>
+    </>
   )
 }
 
