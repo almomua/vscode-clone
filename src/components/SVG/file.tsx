@@ -2,8 +2,8 @@ import IconImg from "../IconImg";
 import { extensionIconPaths } from "../../constants";
 interface FileIconProps {
   filename: string;
-  isFolder: boolean;
-  isOpen: boolean;
+  isFolder?: boolean;
+  isOpen?: boolean;
 }
 
 
