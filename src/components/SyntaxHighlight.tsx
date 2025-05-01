@@ -1,6 +1,6 @@
-import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-
+import {Prism, SyntaxHighlighterProps} from 'react-syntax-highlighter';
+const SyntaxHighlighter = (Prism as any) as React.FC<SyntaxHighlighterProps>;
 type Props = {
     content: string
 }
