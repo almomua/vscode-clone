@@ -1,4 +1,4 @@
-import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import {Prism, SyntaxHighlighterProps} from 'react-syntax-highlighter';
 const SyntaxHighlighter = (Prism as any) as React.FC<SyntaxHighlighterProps>;
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
 
 const SyntaxHighlight = ({content}: Props) => {
   return (
-    <SyntaxHighlighter language="javascript" style={atomOneDark} customStyle={{
+    <SyntaxHighlighter language="javascript" style={atomDark} customStyle={{
         borderRadius:"10px" ,
         backgroundColor:'transparent',
         width:"100%",
